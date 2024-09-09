@@ -23,14 +23,18 @@ const pricing = [
   },
   {
     name: "Rental",
-    price: "$300.00",
+    price: {
+      1 to 10 Devices: "$25/day",
+      10 to 25 Devices: "$23/day",
+      25 to 50 Devices: "$20/day",
+      50+ Devices:       "Contact Us",
+    },
     popular: true,
     features: [
-      "Intel Core i3-8145U @2.10 Ghz (4 threads 3.9Ghz)",
-      "8 G memory",
-      "Refurbished ",
-      "Available to Rent",
-      "Updates and Support",
+      "Delivery Available",
+      "Set Up Available",
+      "Like New Refurbished ",
+      "Technical Support Available",
     ],
     button: {
       text: "Learn More",
@@ -38,16 +42,13 @@ const pricing = [
     },
   },
   {
-    name: "Enterprise",
+    name: "Community Coaching Events",
     price: "Custom",
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Technologies To Boost Your Business",
+      "Held at the Venue of Your Choice",
+      "20+ Years Experience",
     ],
     button: {
       text: "Contact us",
