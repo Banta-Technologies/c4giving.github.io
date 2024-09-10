@@ -57,7 +57,7 @@ Click here to deploy on Netlify:
 
 ## Preview
 
-![image](https://user-images.githubusercontent.com/1884712/200831799-10ef2456-a02e-4068-b580-4b5326f0b33b.png)
+![image](https://c4.giving/preview.png)
 
 
 ## Pro Version Preview
