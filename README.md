@@ -62,7 +62,7 @@ Click here to deploy on Netlify:
 
 ## Pro Version Preview
 
-![preview](https://github.com/surjithctly/astroship/assets/1884712/25665c02-d2a7-43dc-89b2-34a8ae37ade9)
+![preview](https://c4.giving/preview.png)
 
 
 ### Pagespeed Score
