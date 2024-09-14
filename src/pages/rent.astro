@@ -1,29 +1,9 @@
-
----
-import { getCollection } from "astro:content";
-import { Picture } from "astro:assets";
-import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
----
-
-<Layout title="About">
-  <Container>
-    <Sectionhead>
-      <Fragment slot="title">Rent</Fragment>
-      <Fragment slot="desc">Renting Chromebooks to Nonprofits</Fragment>
-    </Sectionhead>
-
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Why Rent?
-      </h2>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renting Chromebooks for Nonprofits</title>
+    <title>Chromebook Rentals for Nonprofits</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,10 +17,21 @@ import Sectionhead from "@components/sectionhead.astro";
         li {
             margin-bottom: 10px;
         }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 362px;
+            height: 224px;
+        }
     </style>
 </head>
 <body>
-<p> </p>
+    <div class="logo-container">
+        <img src="../assets/rent_logo.png" alt="rent" class="logo">
+    </div>
     <ul>
         <li><strong>Cost-effectiveness:</strong> Renting is generally more cost-effective for short-term needs, especially if the event is not frequent. The upfront cost of purchasing Chromebooks can be high, whereas renting allows nonprofits to only pay for the time they need the devices.</li>
         <li><strong>Flexibility:</strong> Renting provides flexibility in terms of the number of devices needed. Nonprofits can rent the exact number of Chromebooks required for the event, without having to invest in a large number of devices that may not be used frequently.</li>
@@ -53,11 +44,6 @@ import Sectionhead from "@components/sectionhead.astro";
         <li><strong>Environmental Considerations:</strong> Renting can also be seen as a more environmentally friendly option, as it reduces the need for the production of new devices and the disposal of old ones.</li>
         <li><strong>Avoiding Obsolescence:</strong> Technology, including Chromebooks, can become outdated quickly. Renting can help nonprofits avoid the issue of owning obsolete technology, as they can rent newer models as needed.</li>
     </ul>
-    <p>Renting Chromebooks can provide a more cost-effective, flexible, and hassle-free solution for nonprofits that need devices for infrequent events.</p>
+    <p>In summary, renting Chromebooks can provide a more cost-effective, flexible, and hassle-free solution for nonprofits that need devices for infrequent events.</p>
 </body>
 </html>
-    </div>
-          </div>
-    </div>
-  </Container>
-</Layout>
