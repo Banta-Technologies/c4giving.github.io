@@ -1,3 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Picture } from "astro:assets";
+import heroImage from "assets/rent_logo.png";
+---
+<Layout title="Rent">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Mission</Fragment>
+      <Fragment slot="desc">Rentals</Fragment>
+    </Sectionhead>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +46,7 @@
 </head>
 <body>
     <div class="logo-container">
-        <img src="../assets/rent_logo.png" alt="rent" class="logo">
+        <Picture class="w-full h-auto" src={heroImage} alt="Rental image" />
     </div>
     <ul>
         <li><strong>Cost-effectiveness:</strong> Renting is generally more cost-effective for short-term needs, especially if the event is not frequent. The upfront cost of purchasing Chromebooks can be high, whereas renting allows nonprofits to only pay for the time they need the devices.</li>
@@ -47,3 +63,5 @@
     <p>In summary, renting Chromebooks can provide a more cost-effective, flexible, and hassle-free solution for nonprofits that need devices for infrequent events.</p>
 </body>
 </html>
+  </Container>
+</Layout>
