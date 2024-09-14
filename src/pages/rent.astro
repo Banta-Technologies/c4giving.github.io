@@ -1,3 +1,19 @@
+----
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Picture } from "astro:assets";
+import heroImage from "assets/rent_logo.png";
+----
+<Layout title="Rent">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">C4</Fragment>
+      <Fragment slot="desc">Rentals</Fragment>
+    </Sectionhead>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +27,6 @@
             margin: 20px;
         }
         ul {
-            list-style-type: disc; /* Ensure bullet points are visible */
             margin-left: 20px;
             padding-left: 20px;
         }
@@ -48,3 +63,5 @@
     <p>Renting Chromebooks can provide a more cost-effective, flexible, and hassle-free solution for nonprofits that need devices for infrequent events.</p>
 </body>
 </html>
+  </Container>
+</Layout>
