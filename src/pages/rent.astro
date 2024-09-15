@@ -10,7 +10,6 @@ import heroImage from "assets/rent_logo.png";
 <Layout title="Rent">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Mission</Fragment>
       <Fragment slot="desc">Rentals</Fragment>
     </Sectionhead>
 
@@ -21,28 +20,30 @@ import heroImage from "assets/rent_logo.png";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chromebook Rentals for Nonprofits</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        ul {
-            margin-left: 20px;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .logo {
-            width: 362px;
-            height: 224px;
-        }
-    </style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+    ul {
+        margin-left: 20px;
+        padding-left: 40px; /* Increase padding-left to ensure bullet points show */
+        list-style-type: disc; /* Ensure bullets are displayed */
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .logo {
+        width: 362px;
+        height: 224px;
+    }
+</style>
+
 </head>
 <body>
     <div class="logo-container">
