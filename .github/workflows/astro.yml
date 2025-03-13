@@ -33,7 +33,8 @@ jobs:
             echo "No lockfile found."
             echo "Please specify your preferred \"package-manager\" in the action configuration."
             exit 1
-fi
+          fi
+
       - name: Build the site
         run: npm run build
 
