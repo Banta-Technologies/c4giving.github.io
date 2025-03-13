@@ -18,21 +18,21 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install dependencies
-        run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          elif [ -f yarn.lock ]; then
-            yarn install --frozen-lockfile
-          elif [ -f pnpm-lock.yaml ]; then
-            pnpm install --frozen-lockfile
-          elif [ -f bun.lockb ]; then
-            bun install
-          else
-            echo "No lockfile found."
-            echo "Please specify your preferred \"package-manager\" in the action configuration."
-            exit 1
-          fi
+- name: Install dependencies
+  run: |
+    if [ -f package-lock.json ]; then
+      npm ci
+    elif [ -f yarn.lock ]; then
+      yarn install --frozen-lockfile
+    elif [ -f pnpm-lock.yaml ]; then
+      echo "pnpm is not supported in this configuration."
+      exit 1
+    elif [ -f bun.lockb ]; then
+      bun install
+    else
+      echo "No lockfile found."
+      echo "Please specify your preferred \"package-manager\" in the action configuration."
+      exit 1
 
       - name: Build the site
         run: npm run build
